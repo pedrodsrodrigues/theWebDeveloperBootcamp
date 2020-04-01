@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+
+    <!-- Chama o ficheiro CSS -->
+    <!-- O "type='text/css' é desnecessário dado que é o default -->
+    <link rel="stylesheet" href="withCss.css">
+
+    <!--
+    <style>
+        h1 {
+            color: blue;
+        }
+
+        li{
+            color: orange;
+        }
+    -->
+    </style>
+</head>
+<body>
+    <h1>CSS</h1>
+
+    <h4>Lista:</h4>
+    <ul>
+        <li class='classLi'><input type='checkbox'><a href='https://duckduckgo.com/'>1ª opção</a></li>
+        <!-- Dá para usar mais do que uma class, juntando-as da forma mostrada abaixo -->
+        <li class='classLi descendant'><input type='checkbox'>2ª opção</li>
+        <!-- Para a checkbox ficar selecionada, quando o user entra na página, é apenas adicionar 'checked' -->
+        <li id='idLi'><input type='checkbox' checked>3ª opção</li>
+        <li><input type='checkbox'>4ª opção</li>
+        <li><input type='checkbox'>5ª opção</li>
+    </ul>
+
+    <h4>Lista 2:</h4>
+    <ul>
+        <li class='classLi'><input type='checkbox'><a href='https://duckduckgo.com/'>1ª opção</a></li>
+        <!-- Dá para usar mais do que uma class, juntando-as da forma mostrada abaixo -->
+        <li class='classLi descendant'><input type='checkbox'>2ª opção</li>
+        <!-- Para a checkbox ficar selecionada, quando o user entra na página, é apenas adicionar 'checked' -->
+        <li><input type='checkbox'>3ª opção</li>
+        <li><input type='checkbox'>4ª opção</li>
+        <li><input type='checkbox'>5ª opção</li>
+    </ul>
+
+    <p>First letter will be in a different color, using CSS</p>
+</body>
+</html>

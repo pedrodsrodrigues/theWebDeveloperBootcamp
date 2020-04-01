@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registo</title>
+</head>
+
+<body>
+    <h1>Registo</h1>
+
+    <form>
+        <div>
+            <label>Primeiro Nome: </label>
+            <input type="text" name='firstName' id='firstName' placeholder='First Name' required>
+
+            <label>Último Nome: </label>
+            <input type="text" name='lastName' id='lastName' placeholder='Last Name' required>
+        </div>
+
+        <div>
+            <label for='male'>Male</label>
+            <input type='radio' name='gender' id='male' value='male'>
+
+            <label for='female'>Female</label>
+            <input type='radio' name='gender' id='female' value='female'>
+
+            <label for='other'>Outro</label>
+            <input type='radio' name='gender' id='other' value='other'>
+        </div>
+
+        <div>
+            <label for='email'>Email: </label>
+            <input type="email" name='email' id='email' placeholder='Email' required>
+
+            <!-- A password tem de ter entre 5 e 10 carateres -->
+            <label for='password'>Password: </label>
+            <input type="password" name='password' id='password' placeholder='Password' pattern=".{5,10}"
+                title="5 to 10 characters" required>
+        </div>
+
+        <div>
+            <label>Data de nascimento: </label>
+            <select name='month'>
+                <option>Mês</option>
+                <option value='Janeiro'>Janeiro</option>
+                <option value='Julho'>Julho</option>
+                <option value='Dezembro'>Dezembro</option>
+            </select>
+
+            <select name='day'>
+                <option value=''>Mês</option>
+                <option value='1'>1</option>
+                <option value='16'>16</option>
+                <option value='31'>31</option>
+            </select>
+
+            <select name='year'>
+                <option value=''>Year</option>
+                <option value='2000'>2000</option>
+                <option value='2010'>2010</option>
+                <option value='2020'>2020</option>
+            </select>
+        </div>
+
+        <div>
+            <label for='termsAndConditions'>Concordo com os termos e condições</label>
+            <input type='checkbox' name='termsAndConditions' id='termsAndConditions'
+                value='agreeWithTermsAndConditions'>
+        </div>
+
+        <input type='submit'>
+    </form>
+</body>
+
+</html>

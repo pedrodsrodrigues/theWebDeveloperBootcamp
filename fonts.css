@@ -1,0 +1,66 @@
+/*! font-family */
+/* Fonte do texto */
+h1 {
+    font-family: 'Georgia';
+}
+
+p {
+    font-family: 'Arial';
+}
+
+/*! font-size */
+/* Tamanho do texto */
+body {
+    /* Tamanho default do texto da página */
+    font-size: 10px;
+}
+
+h1 {
+    /* 5x maior que o default da página */
+    font-size: 5.0em;
+}
+
+p {
+    /* 2x maior que o default da página */
+    font-size: 2.0em;
+}
+
+span {
+    /* 2x maior que o default da página */
+    font-size: 2.0em;
+}
+
+/*! font-weight */
+/* Grossura do texto */
+span {
+    /* Texto a negrito:
+    font-weight: 800;
+    */
+
+    /* O quão grosso se quer o texto */
+    font-weight: 400;
+}
+
+/*! line-height */
+/* Espaço entre as linhas */
+p {
+    line-height: 1.5;
+}
+
+/*! text-align */
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: left;
+}
+
+/*! text-decoration */
+h1 {
+    text-decoration: line-through;
+}
+
+p {
+    text-decoration: underline;
+}

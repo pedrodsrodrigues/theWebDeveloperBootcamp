@@ -1,0 +1,125 @@
+/*! As 4 formas de colocar cores: */
+/*
+Color   (purple)
+HEX     (#640064)
+RGB     (rgb(100, 0, 100))
+RGBA    (rgba(100, 0, 100, 1))
+*/
+
+/*! Os "filhos" ficam com as propriedades dos "pais", a não ser que tenham alguma propriedade mais específica (que substitua a do pai) */
+/* ID tem prioridade em relação à Class, que por sua vez tem prioridade em relação aos elementos */
+/* ID > Class > Element */
+/* Ver a prioridade: https://specificity.keegan.st/ */
+
+/*! Element Selector */
+body {
+    /* background: rgba(99, 99, 99, 1) */
+    background: url(https://cdn.wallpapersafari.com/63/4/74KiN5.jpg);
+    /* Faz com que não repita a imagem, para preencher o ecrã */
+    background-repeat: no-repeat;
+    /* Estica a imagem */
+    background-size: cover;
+}
+
+h1 {
+    color: rgba(0, 255, 0, 1);
+
+    /* Para o 'border-color' fazer algo, é necessário haver uma border - Daí as 2 linhas a seguir */
+    /* border-color: purple;
+    border-width: 5px;
+    border-style: solid; */
+
+    /* Este comando substitui os 3 comandos acima */
+    border: solid purple 5px;
+}
+
+h4 {
+    color: rgba(11, 99, 150, 1);
+    background: rgba(255, 100, 80, 1);
+}
+
+li {
+    color: rgba(100, 0, 100, 1);
+}
+
+/*! ID Selector */
+/* Usar apenas se apenas houver UM elemento com este ID na página */
+#idLi {
+    border: solid rgb(0, 117, 25) 5px;
+}
+
+/*! Class Selector */
+.classLi {
+    border: solid rgba(255, 0, 0, 1) 5px;
+    text-decoration: line-through;
+}
+
+/*! Star Selector */
+/* Usar este estilo em todos os elementos */
+* {
+    border: solid black 1px;
+}
+
+/*! Descendant Selector */
+/* Elementos 'li', que estão dentro de elementos 'ul', que estão dentro do 'body' */
+body ul li {
+    text-decoration: underline;
+}
+
+/* Elementos que têm a class 'descendant', que estão dentro de elementos 'ul' */
+ul .descendant {
+    color: blue;
+}
+
+/*! Adjacent Selector */
+/* Elementos 'ul', que vêm depois de elementos 'h4' */
+h4+ul {
+    border: 4px solid pink;
+}
+
+/*! Attribute Selector */
+/* Elementos 'a', que têm o atributo 'href' com o valor 'https://duckduckgo.com/' */
+a[href='https://duckduckgo.com/'] {
+    border: solid black 4px;
+}
+
+/*! Nth of type */
+/* Apenas o elemento número 3 de cada "grupo" */
+li:nth-of-type(3) {
+    background: white;
+}
+
+/* "Elemento sim-não-sim" 'li' de cada "grupo" */
+li:nth-of-type(even) {
+    background: black;
+}
+
+/* Apenas o elemento 'li' número 5, que está dentro do 2º elemento 'ul' */
+ul:nth-of-type(2) li:nth-of-type(5) {
+    background: pink;
+}
+
+/* Elementos "checked" */
+input:checked {
+    margin-left: 50px
+}
+
+/* Colocar todas os elementos 'h4' em caps lock */
+h4 {
+    text-transform: uppercase;
+}
+
+/* Primeira letra dos elementos 'p' */
+p:first-letter {
+    color: red;
+}
+
+/* Fazer algo ao colocar o rato por cima do elemento 'p' */
+p:hover {
+    text-transform: uppercase;
+}
+
+/* Quando o site já tiver sido visitado */
+a:visited {
+    color: white;
+}

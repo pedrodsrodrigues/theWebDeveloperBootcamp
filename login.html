@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login Form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <!-- Título/Header -->
+    <h1>Login Form</h1>
+
+    <!--
+        Action - Local para onde a informação vai ser enviada
+
+        Methods:
+        POST quando for para enviar informação (para uma base de dados)
+        GET quando for para pesquisar ou devolver informação
+    -->
+    <form action='https://www.duckduckgo.com/' method='post'>
+        <label for='email'>Email:</label>
+        <input type='email' name='email' id='email' placeholder='Email' required>
+
+        <label for='username'>Username:</label>
+        <input type='text' name='username' id='username' placeholder='Username' required>
+
+        <label for='password'>Password:</label>
+        <input type='text' name='password' id='password' placeholder='Password' required>
+
+        <button>Login</button>
+
+        <!-- Traduz o texto do botão de acordo com a linguagem do browser -->
+        <input type='submit'>
+
+        <!-- Outros tipos de 'input':
+             <input type='date'>
+             <input type='color'>
+             <input type='file'>
+             <input type='checkbox'>
+        -->
+    </form>
+</body>
+
+</html>
