@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>The Web Developer Bootcamp - Basics</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <!-- Título/Header -->
+    <h1>Título/Header principal - Page 1</h1>
+
+    <h2>Formatos de texto:</h2>
+    <!-- Parágrafo, com texto a negrito e itálico -->
+    <p>Normal - <strong>Negrito - </strong><em>Itálico</em></p>
+
+    <h2>Listas:</h2>
+    <!-- Lista ordenada, com "list items" -->
+    <ol>
+        <li>Primeiro <em>ponto</em></li>
+        <li>Segundo <em>ponto</em></li>
+        <li>Terceiro <em>ponto</em></li>
+        <!-- Lista não ordenada, com pontos, com "list items" -->
+        <ul>
+            <li>1º</li>
+            <li>2º</li>
+            <!-- Lista ordenada, com "list items" -->
+            <ol>
+                <li>Primeiro <em>sub-</em><strong>ponto</strong></li>
+                <li>Segundo <em>sub-</em><strong>ponto</strong></li>
+                <li>Terceiro <em>sub-</em><strong>ponto</strong></li>
+            </ol>
+            <li>3º</li>
+        </ul>
+    </ol>
+
+    <!-- Lista não ordenada, com pontos, com "list items" -->
+    <ul>
+        <li>Primeiro <em>ponto</em></li>
+        <li>Segundo <em>ponto</em></li>
+        <ul>
+            <li>1º</li>
+            <li>2º</li>
+            <ol>
+                <li>Primeiro <em>sub-</em><strong>ponto</strong></li>
+                <li>Segundo <em>sub-</em><strong>ponto</strong></li>
+                <ol>
+                    <li>Este primeiro <em>ponto</em> está <strong>dentro de outros 3</strong> <em>pontos</em></li>
+                    <li>Este segundo <em>ponto</em> está <strong>dentro de outros 3</strong> <em>pontos</em></li>
+                    <li>Este terceiro <em>ponto</em> está <strong>dentro de outros 3</strong> <em>pontos</em></li>
+                </ol>
+                <li>Terceiro <em>sub-</em><strong>ponto</strong></li>
+            </ol>
+            <li>3º</li>
+        </ul>
+        <li>Terceiro <em>ponto</em></li>
+    </ul>
+
+    <h2>DIVs e SPANs:</h2>
+    <!-- DIV é um 'block container' -->
+    <!-- SPAN é um 'inline container' -->
+    <div>
+        <p>
+            Lorem, <span>ipsum dolor sit amet consectetur adipisicing elit.</span> Molestiae deleniti dolore tempore
+            culpa
+            iusto dolores in ut tenetur. Omnis quasi facilis quos in quod doloremque et adipisci assumenda voluptatem
+            commodi!
+        </p>
+    </div>
+
+    <h2>Atributos:</h2>
+    <!-- IMG chama uma imagem (tanto do pc como do browser) -->
+    <!-- A (âncora):
+         Caso tenha HREF redireciona o user para o link (tanto do pc como do browser)
+    -->
+    <img src='https://clgraphics.files.wordpress.com/2013/05/picture.gif'>
+    <a href='https://www.duckduckgo.com'>Go to DuckDuckGo</a>
+    <br>
+    <a href='login.html'>Go to Login page</a>
+
+    <h2>Tabelas:</h2>
+    <!--
+        THEAD - Header da tabela
+        TBODY - Corpo da tabela
+        TFOOT - Footer da tabela
+        SECTION - Título da tabela
+        TH - Header da tabela
+        TR - Linha da tabela
+        TD - Célula, da tabela, que contém informação
+    -->
+    <table border='1'>
+        <!-- Título da tabela -->
+        <captain>Tabela experimental</captain>
+
+        <!-- Header da tabela -->
+        <thead>
+            <!-- Linha -->
+            <tr>
+                <!-- Header -->
+                <th>1º header</td>
+                <th>2º header</td>
+                <th>3º header</td>
+            </tr>
+        </thead>
+        <!-- Corpo da tabela -->
+        <tbody>
+            <!-- Linha -->
+            <tr>
+                <!-- Conjunto de dados -->
+                <td><img width='50' src='https://clgraphics.files.wordpress.com/2013/05/picture.gif'></td>
+                <td>2º valor</td>
+                <td><a href='https://duckduckgo.com'>3º valor</a></td>
+            </tr>
+            <!-- Linha -->
+            <tr>
+                <!-- Conjunto de dados -->
+                <td><img width='50' src='https://clgraphics.files.wordpress.com/2013/05/picture.gif'></td>
+                <td>5º valor</td>
+                <td><a href='https://duckduckgo.com'>6º valor</a></td>
+            </tr>
+        </tbody>
+        <!-- OUTRO corpo da tabela - Útil caso queira ter várias seções/partes numa só tabela (que podem usar um CSS diferente, por exemplo) -->
+        <tbody>
+            <tr>
+                <!-- Conjunto de dados -->
+                <td><img width='50' src='https://clgraphics.files.wordpress.com/2013/05/picture.gif'></td>
+                <td>8º valor</td>
+                <td><a href='https://duckduckgo.com'>9º valor</a></td>
+            </tr>
+        </tbody>
+        <!-- Footer da tabela -->
+        <tfoot>
+            <tr>
+                <!-- Conjunto de dados -->
+                <td><img width='50' src='https://clgraphics.files.wordpress.com/2013/05/picture.gif'></td>
+                <td>11º valor</td>
+                <td><a href='https://duckduckgo.com'>12º valor</a></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Radio Buttons, Dropdowns e TextAreas:</h2>
+    <!-- Para dar para selecionar apenas um dos radio buttons, basta dar o mesmo NAME em todas as opções -->
+    <form>
+        <label for='1'>1ª opção: </label>
+        <input type='radio' name='opcoes' id='1' value='opcao1'>
+
+        <label for='2'>2ª opção: </label>
+        <input type='radio' name='opcoes' id='2' value='opcao2'>
+
+        <!-- Outra forma de fazer, em vez de ter um "for"
+        <label>1ª opção:
+            <input type='radio' name='opcoes' id='1' value='opcao1'>
+        </label>
+        -->
+
+        <!-- Dropdown, com opções de escolha -->
+        <select name='dropdown'>
+            <option value='primeiro'>1</option>
+            <option value='segundo'>2</option>
+            <option value='terceiro'>3</option>
+        </select>
+
+        <!-- 'Rows' e 'Cols' são os valores do tamanho da box, quando o user entra na página -->
+        <textarea name='textArea' rows='2' cols='20'></textarea>
+
+        <button>Go</button>
+    </form>
+</body>
+
+</html>
