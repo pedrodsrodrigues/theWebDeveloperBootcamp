@@ -1,0 +1,56 @@
+p {
+    /* É a % do pai (body neste caso) */
+    width: 50%;
+    /* width: 200px; */
+
+    border: 2px solid blue;
+
+    /*! Margem, DENTRO da border */
+    /* Margem, DENTRO da border, em todos os (quatro) lados */
+    padding: 10px;
+
+    /* Margem, DENTRO da border, do lado esquerdo apenas */
+    padding-left: 30px;
+
+    /*! Margem, FORA da border */
+    /* Margem, FORA da border, apenas em cima */
+    margin-top: 200px;
+
+    /* Margem, FORA da border, em todos os (quatro) lados (todos com o mesmo tamanho) */
+    margin: 100px;
+
+    /* Margem, FORA da border, em todos os (quatro) lados (todos com tamanhos diferentes) */
+    /* Na seguinte ordem: Cima Direita Baixo Esquerda */
+    margin: 10px 20px 40px 80px;
+
+    /* "Auto" faz com que fique centrado */
+    margin: 10px auto 40px auto;
+
+    /* Também há outra forma de usar o "auto" */
+    /* No caso abaixo vai colocar 10px para cima e para baixo, e colocar "auto" à esquerda e à direita */
+    margin: 10px auto;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+table {
+    margin: auto;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+}
+
+.middleHorizontal {
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+}
+
+.middleVertical {
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+}

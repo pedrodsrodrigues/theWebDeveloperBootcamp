@@ -1,11 +1,13 @@
 /*! font-family */
 /* Fonte do texto */
 h1 {
-    font-family: 'Georgia';
+    font-family: Indie Flower;
+    /*font-family: 'Georgia';*/
 }
 
 p {
-    font-family: 'Arial';
+    font-family: Raleway;
+    /*font-family: 'Arial';*/
 }
 
 /*! font-size */
