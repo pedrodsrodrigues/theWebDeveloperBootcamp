@@ -1,0 +1,47 @@
+var hw = "Hello world!"
+
+// Tamanho de uma string/(var)
+"Hello world!".length                                                   // 12
+hw.length                                                               // 12
+
+// Ver um carater específico de uma string/(var), através do index
+"Hello world!"[0]                                                       // H
+("hello" + "world!")[6]                                                 // o (pois começa a contar a partir do 0)
+hw[0]                                                                   // H
+
+// Ver o último carater de uma string/(var)
+hw[hw.length - 1]                                                       // !
+
+
+
+// Built-In Methods
+// Aparece um pop-up
+alert();
+alert('Hello world!');
+alert(10);
+alert(10 * 10);
+
+// Limpa a consola
+clear()
+
+// Mostra uma mensagem na consola
+console.log('Hello world!');
+console.log(10/2);
+
+// Aparece um pop-up, que pede um valor ao utilizador
+prompt('What\'s your name?');
+var userName = prompt('What\'s your name?');                               // Guarda o valor do utilizador numa variável
+
+
+
+// Falsy and Truthy Values
+// Falsy
+false
+0
+""
+null
+undefined
+NaN
+
+// Truthy
+- Everything else -
