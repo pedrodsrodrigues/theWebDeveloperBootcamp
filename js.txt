@@ -1,16 +1,39 @@
+// NOTAS:
+// Uma variável criada dentro de uma função não é acessível fora dessa mesma função. No entanto,
+// se for uma variável criada num scope global, ela é acessível dentro de uma função, com a hipótese de alterar o valor da mesma
+
+// É possível chamar uma função de X em X tempo
+// setInterval(function, 100)                                       // setInterval(nomeFuncao, milisegundos)
+// Ao executar a função "setInterval", ele irá retornar primeiro um valor. É necessário saber esse valor para podermos pará-la, como explicado abaixo:
+// Executou-se a função "setInterval" e foi devolvido o valor "55". Para parar a função que executámos,
+// teremos de executar a função clearInterval, dando o número que foi retornado:
+// clearInterval(55)
+
+// É possível criar uma função apenas para ser chamada de X em X tempo
+// (funciona da mesma forma que foi explicado acima, mas a função é diretamente criada aqui)
+setInterval(function(){
+ console.log ('Hey there!')
+}, 100)
+
+
+
 var hw = "Hello world!"
 
 // Tamanho de uma string/(var)
-"Hello world!".length                                                   // 12
-hw.length                                                               // 12
+"Hello world!".length                                               // 12
+hw.length                                                           // 12
 
 // Ver um carater específico de uma string/(var), através do index
-"Hello world!"[0]                                                       // H
-("hello" + "world!")[6]                                                 // o (pois começa a contar a partir do 0)
-hw[0]                                                                   // H
+"Hello world!"[0]                                                   // H
+("hello" + "world!")[6]                                             // o (pois começa a contar a partir do 0)
+hw[0]                                                               // H
 
 // Ver o último carater de uma string/(var)
-hw[hw.length - 1]                                                       // !
+hw[hw.length - 1]                                                   // !
+
+// Substituir um carater específico de uma string
+// Neste caso é para substituir todos os "!" por "?"
+hw.replace(/!/g, "?")
 
 
 
@@ -30,7 +53,7 @@ console.log(10/2);
 
 // Aparece um pop-up, que pede um valor ao utilizador
 prompt('What\'s your name?');
-var userName = prompt('What\'s your name?');                               // Guarda o valor do utilizador numa variável
+var userName = prompt('What\'s your name?');                        // Guarda o valor do utilizador numa variável
 
 
 
@@ -45,3 +68,52 @@ NaN
 
 // Truthy
 - Everything else -
+
+
+
+// Return
+// Criar uma função que retorna um valor
+function square(x) {
+    return x * x;
+}
+
+// Chamar a função
+square(4)                                                           // 16
+
+// Chamar a função para completar uma string com o valor recebido
+"4 squared is: " + square(4)                                        // 4 squared is: 16
+
+// Colocar o valor retornado numa variável
+var result = square(4)
+result                                                              // 16
+
+
+
+// Arrays
+var array = ['Primeiro valor', 'Segundo valor', 'Terceiro valor', 'Quarto valor', 'Quinto valor']
+
+// Adiciona um valor ao array, que irá ser o seu último index. Retorna o INDEX usado/o último index
+array.push("último valor do array")                                 // 6
+
+// Remove o último valor do array, que irá ser o seu último index. Retorna o VALOR que foi removido/o último valor
+array.pop()                                                         // Quinto valor
+
+// Adiciona um valor ao array, que irá ser o seu primeiro index. Retorna o tamanho do array
+array.unshift("Primeiro valor do array")                            // 6
+
+// Remove o primeiro valor do array, que irá ser o seu primeiro index. Retorna o VALOR que foi removido/o primeiro valor
+array.shift()                                                       // Primeiro valor
+
+// Procura num array o index que tem um valor específico,. Se houver mais que um,
+// retorna o valor que tem o index mais próximo do index 0/o primeiro que encontrar. Caso não exista, retorna "-1"
+array.indexOf("Segundo valor")                                      // 1
+
+// Copia os valores de indexes especiíficos. Retorna os valores copiados
+array.slice(1, 3)                                                   // 'Segundo valor', 'Terceiro valor'
+
+// Copia todos os valores de um array
+array.slice()                                                       // 'Primeiro valor', 'Segundo valor', 'Terceiro valor', 'Quarto valor', 'Quinto valor'
+
+// Isto pode ser útil para criar um array apartir de outro array
+var otherArray = array.slice()                                      // "otherArray" seria igual a "array"
+var otherArray = array.slice(1, 3)                                  // "otherArray" teria apenas 'Segundo valor' e 'Terceiro valor'
