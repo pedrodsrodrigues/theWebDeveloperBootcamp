@@ -117,3 +117,11 @@ array.slice()                                                       // 'Primeiro
 // Isto pode ser útil para criar um array apartir de outro array
 var otherArray = array.slice()                                      // "otherArray" seria igual a "array"
 var otherArray = array.slice(1, 3)                                  // "otherArray" teria apenas 'Segundo valor' e 'Terceiro valor'
+
+// Remove um (ou mais) index(es) específico(s) do array. Dá-se o (primeiro) index que queremos removidos, e quantos números (a partir desse mesmo index)
+// queremos removidos. No caso abaixo seria removido o index 4 e os 2 indexes a seguir, ou seja, o index 4, 5 e 6.
+array.splice(4, 3)                                                  // array.splice(index, quantidadeIndexes)
+
+// Para reverter os valores de um array
+var reversedArray = array.reverse()
+console.log(reversedArray);                                         // 'Quinto valor', 'Quarto valor', 'Terceiro valor', 'Segundo valor', 'Primeiro valor'
