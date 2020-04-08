@@ -66,4 +66,3 @@ function max(array) {
 }
 
 max([1,4,2]);
-
