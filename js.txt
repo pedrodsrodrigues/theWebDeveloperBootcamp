@@ -1,4 +1,9 @@
 // NOTAS:
+// Ficheiros Javascript devem ser chamados no fim do body!
+
+// Não se deve colocar "array.length" na condição do loop, pois isso vai tornar o loop mais lento (visto que vai calcular sempre que faz a itereção)
+// É preferível usar uma variável que faz esse cálculo (acontecendo assim apenas uma vez), e usar essa mesma variável na condição
+
 // Uma variável criada dentro de uma função não é acessível fora dessa mesma função. No entanto,
 // se for uma variável criada num scope global, ela é acessível dentro de uma função, com a hipótese de alterar o valor da mesma
 
@@ -14,6 +19,14 @@
 setInterval(function(){
  console.log ('Hey there!')
 }, 100)
+
+// É possível ter uma função dentro de um opjeto - a isto dá-se o nome de método
+var objeto = {
+    soma: function(x,y){
+        return x + y;
+    }
+}
+objeto.soma(1,5);                                                   // Chama uma função que está dentro de um objeto
 
 
 
