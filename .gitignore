@@ -1,2 +1,3 @@
 /.scannerwork
-/Para correr o sonar - 'sonarscanner' com powershell nesta pasta.txt
+runSonar_sonar-scanner_inThisFolder.txt
+
